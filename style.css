@@ -1,0 +1,87 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;font-family: 'Open Sans', sans-serif;
+
+}
+.containerr{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.inner-container{
+    width: 50%;
+    height: 100%;
+
+
+}
+.pro{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cover{
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    background-color: red;
+}
+.cover img{
+    width: 100%;
+    height: auto;
+}
+.Profile{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    margin-top: -100px;
+    z-index: 1;
+
+}
+.Profile img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.pro p{
+color: rgb(190, 188, 188);
+text-align: center;
+}
+.contacts{
+    width: 100%;
+    /* padding: 20px; */
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.icon i{
+    font-size: 15px;
+}
+.contacts p a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
+@media(max-width:500px){
+    .inner-container{
+        width: 100vw;
+    } 
+}
