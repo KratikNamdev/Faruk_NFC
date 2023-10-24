@@ -95,11 +95,58 @@
   
  </div>
 
+ <div class="social-icon"> 
+    <div class="icon">
+      <a href="https://youtube.com/@publicvoicenews1014?si=9lr2KmSltx_pBmNE"><i class="bi bi-youtube"></i></a> 
+    </div>
+    <div class="icon">
+        <a id="googlePayButton"> <i class="bi bi-credit-card"></i></i></a> 
+
+    </div>
+    
+  
+ </div>
 </div>
+
+
+
+<footer>
+    
+</footer>
+
+
+
+
+
 
 
         </div>
 
     </div>
+
+
+
+    <script>
+        // Function to open Google Pay with a specific UPI ID
+        function openGooglePay() {
+            var upiId = "kratiknamdev47-2@okhdfcbank"; // Replace with the desired UPI ID
+            var googlePayLink = "upi:" + upiId;
+            
+            // Create a hidden anchor element to trigger the link
+            var anchor = document.createElement("a");
+            anchor.href = googlePayLink;
+            anchor.style.display = "none";
+            document.body.appendChild(anchor);
+            
+            // Trigger a click event on the anchor element to open Google Pay
+            anchor.click();
+            
+            // Clean up by removing the anchor element
+            document.body.removeChild(anchor);
+        }
+
+        // Attach the function to the button click event
+        document.getElementById("googlePayButton").addEventListener("click", openGooglePay);
+    </script>
 </body>
 </html>
